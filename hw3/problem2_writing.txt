@@ -1,0 +1,3 @@
+problem2_writing:
+	I declare two classes. One is Parent which has a pure virtual function named fail(). The other is Child which inherits the Parent class and has its own function succeed().
+	When the program is running. What's happening in the environment is that: First a variable named testChild is declared. Then the succeed() function is called successfully. Finally the program tries to call fail() in Child. Since the fail() function is inherited from Parent class, it calls the fail() in the Parent class but fail() is pure virtual function in Parent class and isn't defined in Child class. Therefore runtime error occurs by calling pure virtual function.

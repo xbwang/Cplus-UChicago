@@ -1,0 +1,3 @@
+The first sort function sorts all the elements, so its average running time should be O(nlgn), where n is the number of the elements.
+The second sort function partial_sort just sorts the first m elements of n, so it's faster and its average running time should be O(nlgm).
+The third sort function nth_element just guarantees the nth element is greater than its preceding elements and smaller than the following elements, so it's the fastest one. And its average running time maybe O(n).

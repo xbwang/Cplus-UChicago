@@ -1,0 +1,12 @@
+f() may complete if g() throws some exceptions before a stack overflow occurs.
+Or add "try and catch" as follows then if g() throws some exceptions then the program wold terminate normally.
+
+int f(){
+	try{
+		cout << "Some text";
+		g();
+		cout << f();
+	}catch(...){}
+	cout.flush();
+	return 0;
+}

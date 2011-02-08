@@ -1,0 +1,2 @@
+Pre Increment means that the variable is incremented BEFORE the expression is evaluated. And Post Increment means that the variable is incremented AFTER the expression is evaluated.
+C++ was initially named as "C with classes", which implicitly shows that C++ was developed based on C. Since C++ is "incremented AFTER" C, so it's called C++ but not ++C.
