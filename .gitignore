@@ -1,2 +1,4 @@
 *.[oa]
 *.sh
+.DS_Store
+*.png

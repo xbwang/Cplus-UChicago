@@ -1,0 +1,2 @@
+The maximum number I can count on both hands is 1023, which is 2^10 - 1.
+What should you do to obtain this maximum is just raising all your fingers to represent 1111111111 in binary number(1023 = 2^9+2^8+2^7+2^6+2^5+2^4+2^3+2^2+2^1+2^0).
