@@ -50,5 +50,9 @@ int main()
     return 0;
 }
 
+/*
+use a global array to store the thread_local results!
+*/
+
 
 
