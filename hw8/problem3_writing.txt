@@ -1,0 +1,18 @@
+IntegerMatrix:
+	The original execution time on 2x2 matrix is 0.11.
+	The modified execution time on 2x2 matrix is 0.01.
+	The original execution time on 3x3 matrix is 0.78.
+	The modified execution time on 3x3 matrix is 0.39.
+PSMatrix:
+	The original execution time on 2x2 matrix is 0.14.
+	The modified execution time on 2x2 matrix is 0.01.
+	The original execution time on 3x3 matrix is 0.68.
+	The modified execution time on 3x3 matrix is 0.35.
+OverloadMatrix:
+	The original execution time on 2x2 matrix is 0.17.
+	The modified execution time on 2x2 matrix is 0.04.
+	The original execution time on 3x3 matrix is 0.85.
+	The modified execution time on 3x3 matrix is 0.47.
+	
+Having a direct of determinants for 2x2 matrices speed up the original execution time about 0.1s on 2x2 and 0.3s on 3x3. This indicates sometimes pure general functions such as the determinant in the classes of these three files are slower than mixed-general functions which have some direct calculations such as the modified ones.
+We may need the direct of calculation when the problem's size reduced to some certain size.
