@@ -6,7 +6,9 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include <boost/function.hpp>
 using namespace std;
+using namespace boost;
 
 double
 StandardDeviation(vector<double> v)
@@ -17,7 +19,7 @@ StandardDeviation(vector<double> v)
     for_each(v.begin(), v.end(), [&mean](int x){
         mean += x;
         });
-    mean /= v.length();
+    mean /= v.size();
 
     for_each(v.begin(), v.end(), [=,&sumSquares](int x){
         sumSquares += pow(x-mean,2);
@@ -27,5 +29,9 @@ StandardDeviation(vector<double> v)
 
 int main()
 {
+    vector<double> v;
+    v.push_back(7);
+    v.push_back(24);
+    cout << StandardDeviation(v) << endl;
     return 0;
 }

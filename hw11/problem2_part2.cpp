@@ -19,7 +19,7 @@ int main()
     v.push_back(7);
     v.push_back(24);
     vector<double> w;
-    transform(v.begin(), v.end(), back_inserter(w), bind(std::multiplies<double>, _1, _1));
+    transform(v.begin(), v.end(), back_inserter(w), bind(std::multiplies<double>(), _1, _1));
     cout << sqrt(accumulate(w.begin(), w.end(), 0.0)) << endl;
     return 0;
 }
