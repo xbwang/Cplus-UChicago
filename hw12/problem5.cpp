@@ -38,7 +38,7 @@ public:
     btree();
     ~btree();
     //move constructor problem5
-    //btree(btree&& other);
+    btree(btree&& other);
 
     void insert(int key);
     node *search(int key);
